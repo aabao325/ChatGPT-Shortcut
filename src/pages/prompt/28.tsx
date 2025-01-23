@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "美食评论",
-    "prompt": "I want you to act as a food critic and respond in Chinese. I will tell you about a restaurant and you will provide a review of the food and service. You should only reply with your review, and nothing else. Do not write explanations. My first request is '餐厅情况'",
+    "prompt": "I want you to act as a food critic. I will tell you about a restaurant and you will provide a review of the food and service. You should only reply with your review, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Chinese. My first request is '餐厅情况'",
     "description": "我想让你充当一个美食评论家。我将告诉你一家餐馆，你将提供对食物和服务的评论。你应该只回复你的评论，而不是其他。不要写解释。我的第一个要求是 '餐厅情况'",
     "remark": "根据餐厅情况，撰写一份有关食品和服务的评论。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "食品レビュー",
-    "prompt": "I want you to act as a food critic. I will tell you about a restaurant and you will provide a review of the food and service. You should only reply with your review, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Janpanese. My first request is ",
+    "prompt": "I want you to act as a food critic. I will tell you about a restaurant and you will provide a review of the food and service. You should only reply with your review, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Japanese. My first request is ",
     "description": "料理評論家として活動してほしい。私があるレストランを紹介するので、あなたは料理やサービスについてのレビューを書いてください。あなたは自分のレビューにだけ反応し、それ以外のことはしてはいけません。解説は書かないでください。最初のリクエストは「レストラン事情」です。",
     "remark": "レストランを基準に料理やサービスのレビューを書いてください。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "comments"
   ],
   "id": 28,
-  "weight": 393
+  "weight": 502
 };
 
 function PromptDetail() {

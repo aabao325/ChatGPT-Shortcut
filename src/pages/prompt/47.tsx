@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "非小说类书籍总结",
-    "prompt": "I want you to act as a Life Coach and respond in Chinese. Please summarize this non-fiction book, [书名] by [作者]. Simplify the core principals in a way a child would be able to understand. Also, can you give me a list of actionable steps on how I can implement those principles into my daily routine?",
+    "prompt": "I want you to act as a Life Coach. Please summarize this non-fiction book, [书名] by [作者]. Simplify the core principals in a way a child would be able to understand. Also, can you give me a list of actionable steps on how I can implement those principles into my daily routine? The entire conversation and instructions should be provided in Chinese.",
     "description": "我想让你充当一个生活教练。请总结一下这本由 [作者] 撰写的非小说类书籍 [书名]。用一个孩子能够理解的方式来简化核心原则。另外，你能不能给我一份可操作的步骤清单，告诉我如何将这些原则落实到我的日常生活中？",
     "remark": "根据输入的非小说类书籍标题和作者，以最容易理解的方式概括该书的核心原则。同时，提供一份可行的步骤清单，介绍如何将这些原则应用到日常生活中。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ノンフィクション書籍の概要",
-    "prompt": "I want you to act as a Life Coach. Please summarize this non-fiction book, [书名] by [作者]. Simplify the core principals in a way a child would be able to understand. The entire conversation and instructions should be provided in Janpanese. Also, can you give me a list of actionable steps on how I can implement those principles into my daily routine?.",
+    "prompt": "I want you to act as a Life Coach. Please summarize this non-fiction book, [书名] by [作者]. Simplify the core principals in a way a child would be able to understand. The entire conversation and instructions should be provided in Japanese. Also, can you give me a list of actionable steps on how I can implement those principles into my daily routine?.",
     "description": "ライフコーチとして活動してほしい。この [著者] のノンフィクション本 [タイトル] を要約してください。子供でも理解できるように、核となる原則を簡略化してください。また、これらの原則をどのように日常生活に導入するか、実行可能なステップのリストを教えてください。",
     "remark": "入力されたノンフィクションのタイトルと著者に基づき、その本の核となる原則を最も分かりやすい方法で概説する。また、これらの原則を日常生活に適用する方法について、実行可能なステップのリストを提供すること。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "life"
   ],
   "id": 47,
-  "weight": 592
+  "weight": 816
 };
 
 function PromptDetail() {

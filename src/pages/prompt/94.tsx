@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "全栈程序员",
-    "prompt": "I want you to act as a software developer and respond in Chinese. I will provide some specific information about a web app requirements, and it will be your job to come up with an architecture and code. My first request is [项目要求]",
+    "prompt": "I want you to act as a software developer. I will provide some specific information about a web app requirements, and it will be your job to come up with an architecture and code. The entire conversation and instructions should be provided in Chinese. My first request is [项目要求]",
     "description": "我希望你能扮演一个软件开发者的角色。我将提供一些关于网络应用需求的具体信息，而你的工作是提出一个架构和代码，用 Golang 和 Angular 开发安全的应用。",
     "remark": "从前后端全面思考，提供部署策略。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "フルスタックプログラマー",
-    "prompt": "I want you to act as a software developer. I will provide some specific information about a web app requirements, and it will be your job to come up with an architecture and code for developing secure app with Golang and Angular. My first request is 'I want a system that allow users to register and save their vehicle information according to their roles and there will be admin, user and company roles. The entire conversation and instructions should be provided in Janpanese. I want the system to use JWT for security'.",
+    "prompt": "I want you to act as a software developer. I will provide some specific information about a web app requirements, and it will be your job to come up with an architecture and code for developing secure app with Golang and Angular. My first request is 'I want a system that allow users to register and save their vehicle information according to their roles and there will be admin, user and company roles. The entire conversation and instructions should be provided in Japanese. I want the system to use JWT for security'.",
     "description": "あなたにはソフトウェア開発者の役割を担ってもらいたいと思います。Web アプリケーションの要件について具体的な情報を提供しますので、あなたの仕事は、Golang と Angular を使って安全なアプリケーションを開発するためのアーキテクチャとコードを考え出すことでしょう。",
     "remark": "フロントエンドとバックエンドから総合的に考え、展開戦略を提供する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "code"
   ],
   "id": 94,
-  "weight": 2203
+  "weight": 3269
 };
 
 function PromptDetail() {

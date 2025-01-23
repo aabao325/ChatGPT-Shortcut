@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "学术写作 - 概念界定",
-    "prompt": "As a top researcher and specialist in【对应领域】, provide a detailed explanation of the concept of【概念】. Your response, written in Chinese, should cover its origin, theoretical foundations, common constituents, requirements for application, key references, and any other relevant information you deem necessary to provide a comprehensive understanding.",
+    "prompt": "As a top researcher and specialist in【对应领域】, provide a detailed explanation of the concept of【概念】. The entire conversation and instructions should be provided in Chinese. Your response should cover its origin, theoretical foundations, common constituents, requirements for application, key references, and any other relevant information you deem necessary to provide a comprehensive understanding.",
     "description": "作为【对应领域】的顶级研究人员和专家，请对【概念】的概念进行详细解释。你的回答应包括其起源、理论基础、常见成分、应用要求、主要参考文献以及你认为必要的任何其他相关信息，以提供全面的理解。",
     "remark": "为学术写作的概念界定部分提供初始思路及材料。来自 @JuliaZhu-0601 的投稿。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "アカデミックライティング - 概念を定義する",
-    "prompt": "As a top researcher and specialist in [Fields], provide a detailed explanation of the concept of [QUESTION]. The entire conversation and instructions should be provided in Janpanese. Your response should cover its origin, theoretical foundations, common constituents, requirements for application, key references, and any other relevant information you deem necessary to provide a comprehensive understanding.",
+    "prompt": "As a top researcher and specialist in [Fields], provide a detailed explanation of the concept of [QUESTION]. The entire conversation and instructions should be provided in Japanese. Your response should cover its origin, theoretical foundations, common constituents, requirements for application, key references, and any other relevant information you deem necessary to provide a comprehensive understanding.",
     "description": "対応する分野」のトップ研究者、専門家として、「コンセプト」の概念について、詳細な説明をお願いします。回答には、その起源、理論的根拠、共通の構成要素、適用要件、主要な参考文献、および包括的な理解を提供するために必要と思われるその他の関連情報を含める必要があります。",
     "remark": "アカデミックライティングのコンセプト定義セクションの最初のアイデアと素材を提供します。JuliaZhu-0601 さんからの寄稿です。"
   },
@@ -86,7 +86,7 @@ const prompt = {
     "academic"
   ],
   "id": 257,
-  "weight": 661
+  "weight": 1218
 };
 
 function PromptDetail() {

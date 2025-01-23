@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "社交媒体影响者/KOL",
-    "prompt": "I want you to act as a social media influencer and respond in Chinese. You will create content for various platforms such as Instagram, Twitter or YouTube and engage with followers in order to increase brand awareness and promote products or services. My first suggestion request is [推广目的]",
+    "prompt": "I want you to act as a social media influencer. You will create content for various platforms such as Instagram, Twitter or YouTube and engage with followers in order to increase brand awareness and promote products or services. The entire conversation and instructions should be provided in Chinese. My first suggestion request is [推广目的]",
     "description": "我想让你充当社交媒体的影响者。你将为各种平台（如 Instagram、Twitter 或 YouTube）创建内容，并与追随者互动，以提高品牌知名度并推广产品或服务。",
     "remark": "Social Media Influencer"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ソーシャルメディアインフルエンサー/KOLs",
-    "prompt": "I want you to act as a social media influencer. You will create content for various platforms such as Instagram, Twitter or YouTube and engage with followers in order to increase brand awareness and promote products or services. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a social media influencer. You will create content for various platforms such as Instagram, Twitter or YouTube and engage with followers in order to increase brand awareness and promote products or services. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "ソーシャルメディアのインフルエンサーとして活動してほしい。さまざまなプラットフォーム（Instagram、Twitter、YouTube など）向けのコンテンツを作成し、フォロワーと交流することで、ブランドの認知度向上や商品・サービスのプロモーションを行っていただきます。",
     "remark": "ソーシャルメディアインフルエンサー"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "company"
   ],
   "id": 144,
-  "weight": 518
+  "weight": 714
 };
 
 function PromptDetail() {

@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "学习计划制定",
-    "prompt": "I want to enhance my [目标技能] through a personalized 30-day learning plan. As an aspiring [初学者/进阶学习者] who is eager to continuously improve, I would like you to assist me in creating a customized learning roadmap to help me master this skill effectively. Please provide detailed guidance and suggestions in your response below, including specific learning goals, daily learning tasks, relevant learning resources, and a method to assess progress. Respond in Chinese. I aim to achieve optimal learning outcomes during these 30 days.",
+    "prompt": "I want to enhance my [目标技能] through a personalized 30-day learning plan. As an aspiring [初学者/进阶学习者] who is eager to continuously improve, I would like you to assist me in creating a customized learning roadmap to help me master this skill effectively. Please provide detailed guidance and suggestions in your response below, including specific learning goals, daily learning tasks, relevant learning resources, and a method to assess progress. The entire conversation and instructions should be provided in Chinese. I aim to achieve optimal learning outcomes during these 30 days.",
     "description": "我希望通过 30 天的定制学习计划来提升我的 [目标技能]。作为一个渴望不断进步的 [初学者/进阶学习者]，我希望你能帮我制定一个个性化的学习路线，以帮助我有效地掌握这项技能。在这个学习计划中，包括具体的学习目标、每日的学习任务、适用的学习资源以及评估进展的方式。请在下面的回答中提供详细的指导和建议，使我能够在这 30 天内取得最佳的学习效果。",
     "remark": "不仅适用于学习计划的制定，还可用于锻炼、阅读、工作等方面。来自 @ScenerorSun 的投稿。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ラーニングプランの作成",
-    "prompt": "I want to enhance my [SKILL] through a personalized 30-day learning plan. As an aspiring [Beginner/Advanced learner] who is eager to continuously improve, I would like you to assist me in creating a customized learning roadmap to help me master this skill effectively. Please provide detailed guidance and suggestions in your response below, including specific learning goals, daily learning tasks, relevant learning resources, and a method to assess progress. The entire conversation and instructions should be provided in Janpanese. I aim to achieve optimal learning outcomes during these 30 days.",
+    "prompt": "I want to enhance my [SKILL] through a personalized 30-day learning plan. As an aspiring [Beginner/Advanced learner] who is eager to continuously improve, I would like you to assist me in creating a customized learning roadmap to help me master this skill effectively. Please provide detailed guidance and suggestions in your response below, including specific learning goals, daily learning tasks, relevant learning resources, and a method to assess progress. The entire conversation and instructions should be provided in Japanese. I aim to achieve optimal learning outcomes during these 30 days.",
     "description": "私は、30 日間のオーダーメイド学習プログラムを通じて、[対象スキル] を向上させたいと考えています。初級者/上級者] であり、常に向上心を持ち続けている私は、このスキルを効果的に習得するための個人的な学習ルートを開発する手助けをしてほしい。この学習計画には、具体的な学習目標、毎日の学習課題、適用可能な学習リソース、進捗状況の評価方法などを含めてください。この 30 日間で、私が最高の学習成果を得られるよう、以下の回答で詳細な指導と助言をお願いします。",
     "remark": "学習計画策定だけでなく、運動や読書、仕事などにも。ScenerorSun さん（@ScenerorSun）からの寄稿です。"
   },
@@ -86,7 +86,7 @@ const prompt = {
     "pedagogy"
   ],
   "id": 262,
-  "weight": 702
+  "weight": 1071
 };
 
 function PromptDetail() {

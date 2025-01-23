@@ -4,15 +4,14 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 //const zhNavbar = require("./src/components/LocalizedNavbar/Navbar.zh");
 //const enNavbar = require("./src/components/LocalizedNavbar/Navbar.en");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title:
-    "AiShort(ChatGPT Shortcut)-AI Prompt Management,Productivity Tool",
+  title: "AiShort(ChatGPT Shortcut)-AI Prompt Management,Productivity Tool",
   // tagline: '方便中文使用 ChatGPT 快捷指令',
   favicon: "img/favicon.ico",
 
@@ -31,50 +30,20 @@ const config = {
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // useful metadata like html lang. For example, if your site is English, you
+  // may want to replace "zh" with "en".
   i18n: {
-    defaultLocale: "zh-Hans",
-    locales: ["zh-Hans", "en", "ja", "ko", "es", "fr", "de", "it", "ru", "pt", "hi", "ar", "bn"],
+    defaultLocale: "zh",
+    locales: ["en", "zh", "ja", "ko", "es", "fr", "de", "it", "ru", "pt", "hi", "ar", "bn"],
     localeConfigs: {
-      en: {
-        htmlLang: "en-US",
-      },
-      ja: {
-        htmlLang: "ja-JP",
-      },
-      ko: {
-        htmlLang: "ko-KR",
-      },
-      es: {
-        htmlLang: "es-ES",
-      },
-      fr: {
-        htmlLang: "fr-FR",
-      },
-      de: {
-        htmlLang: "de-DE",
-      },
-      it: {
-        htmlLang: "it-IT",
-      },
-      ru: {
-        htmlLang: "ru-RU",
-      },
-      pt: {
-        htmlLang: "pt-PT",
-      },
-      hi: {
-        htmlLang: "hi-IN",
-      },
       ar: {
-        htmlLang: "ar-SA",
-      },
-      bn: {
-        htmlLang: "bn-BD",
+        direction: "rtl",
       },
     },
   },
+  /*   future: {
+    experimental_faster: true,
+  }, */
 
   presets: [
     [
@@ -86,28 +55,20 @@ const config = {
           sidebarPath: "sidebars.js",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
         gtag: {
           trackingID: "G-YJY639H2J1",
           anonymizeIP: false,
         },
+        /*
+        googleTagManager: {
+          containerId: "GTM-MX524GTT",
+        },*/
       }),
     ],
   ],
   plugins: [
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        redirects: [
-          // /docs/oldDoc -> /docs/newDoc
-          {
-            to: "/",
-            from: "/cn",
-          },
-        ],
-      },
-    ],
     /* [
       "docusaurus2-plugin-google-adsense",
       {
@@ -123,11 +84,15 @@ const config = {
     ({
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       metadata: [
         {
           name: "keywords",
-          content:
-            "prompt,aishort,ChatGPT Shortcut,ChatGPT SC,ChatGPT,AI prompts，提示词",
+          content: "prompt,aishort,ChatGPT Shortcut,ChatGPT SC,ChatGPT,AI prompts，提示词",
         },
       ],
       navbar: {
@@ -154,8 +119,12 @@ const config = {
             position: "left",
             items: [
               {
+                label: "脚本扩展",
+                to: "/docs/extension",
+              },
+              {
                 label: "IMGPrompt",
-                href: "https://prompt.newzone.top/",
+                href: "https://prompt.newzone.top/app",
               },
               {
                 label: "文字处理",
@@ -164,14 +133,6 @@ const config = {
               {
                 label: "工具收藏",
                 href: "https://nav.newzone.top",
-              },
-              {
-                label: "Chrome 扩展",
-                href: "https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj",
-              },
-              {
-                label: "Edge 扩展",
-                href: "https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin",
               },
               {
                 label: "Find on Product Hunt",
@@ -189,12 +150,8 @@ const config = {
                 to: "/feedback",
               },
               {
-                label: "💬 微信交流",
-                href: "https://img.newzone.top/wechat.svg",
-              },
-              {
-                label: "📧 发送邮件",
-                href: "mailto:learndata@newzone.top",
+                label: "💬 加入 QQ 群",
+                href: "https://img.newzone.top/qq736094782.jpg?imageMogr2/format/webp",
               },
               {
                 label: "📺 加入 Discord",
@@ -202,16 +159,22 @@ const config = {
               },
             ],
           },
+          // remove the language dropdown from the navbar (if you only have one language)
           { type: "localeDropdown", position: "right" },
           {
-            href: "https://github.com/rockbenben/ChatGPT-Shortcut",
+            href: "https://qm.qq.com/q/sHgB9eqd6E",
             position: "right",
-            className: "header-github-link",
+            className: "header-qq-link",
           },
           {
             href: "https://discord.gg/PZTQfJ4GjX",
             position: "right",
             className: "header-discord-link",
+          },
+          {
+            href: "https://github.com/rockbenben/ChatGPT-Shortcut",
+            position: "right",
+            className: "header-github-link",
           },
         ],
       },

@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "算法入门讲解",
-    "prompt": "I want you to act as an instructor in a school, teaching algorithms to beginners and respond in Chinese. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. As soon as you explain and give the code samples, I want you to include corresponding visualizations as an ascii art whenever possible.",
+    "prompt": "I want you to act as an instructor in a school, teaching algorithms to beginnerse. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. The entire conversation and instructions should be provided in Chinese. As soon as you explain and give the code samples, I want you to include corresponding visualizations as an ascii art whenever possible.",
     "description": "我想让你在学校里担任教员，向初学者教授算法。你将使用 python 编程语言提供代码实例。首先，开始简要地解释什么是算法，并继续举出简单的例子，包括气泡排序和快速排序。稍后，等待我的提示，提出其他问题。一旦你解释并给出代码示例，我希望你尽可能地包括相应的可视化的 ascii 艺术。",
     "remark": "向初学者介绍 Python 编程语言入门知识。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "アルゴリズム入門を解説",
-    "prompt": "I want you to act as an instructor in a school, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. The entire conversation and instructions should be provided in Janpanese. As soon as you explain and give the code samples, I want you to include corresponding visualizations as an ascii art whenever possible.",
+    "prompt": "I want you to act as an instructor in a school, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. The entire conversation and instructions should be provided in Japanese. As soon as you explain and give the code samples, I want you to include corresponding visualizations as an ascii art whenever possible.",
     "description": "学校の講師として、初心者にアルゴリズムを教える仕事をお願いしたいです。プログラミング言語「python」を使ってコード例を提供していただきます。まず、アルゴリズムとは何かを簡単に説明し、バブルソートやクイックソートなどの簡単な例題を続けてください。その後、私が追加で質問するのを待ちます。説明とコード例が終わったら、可能な限り対応するビジュアルなアスキーアートを添付してほしい。",
     "remark": "初心者のためのプログラミング言語 Python の入門書です。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "academic"
   ],
   "id": 88,
-  "weight": 601
+  "weight": 844
 };
 
 function PromptDetail() {

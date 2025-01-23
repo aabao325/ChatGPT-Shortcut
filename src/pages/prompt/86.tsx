@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "词源学家",
-    "prompt": "I want you to act as a etymologist and respond in Chinese. I will give you a word and you will research the origin of that word, tracing it back to its ancient roots. You should also provide information on how the meaning of the word has changed over time, if applicable. My first request is 'I want to trace the origins of the word '词语'.'",
+    "prompt": "I want you to act as a etymologist. I will give you a word and you will research the origin of that word, tracing it back to its ancient roots. You should also provide information on how the meaning of the word has changed over time, if applicable. The entire conversation and instructions should be provided in Chinese. My first request is 'I want to trace the origins of the word '词语'.'",
     "description": "我想让你充当一名词源学家。我会给你一个词，你要研究这个词的起源，追溯它的古老根源。如果适用的话，你还应提供关于该词的含义如何随时间变化的信息。我的第一个要求是我想追踪 [词语] 的起源'。",
     "remark": "介绍词汇的起源，适用于中文、英文和其他主流语言。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "語源学者",
-    "prompt": "I want you to act as a etymologist. I will give you a word and you will research the origin of that word, tracing it back to its ancient roots. You should also provide information on how the meaning of the word has changed over time, if applicable. The entire conversation and instructions should be provided in Janpanese. My first request is 'I want to trace the origins of the word 'x'.'.",
+    "prompt": "I want you to act as a etymologist. I will give you a word and you will research the origin of that word, tracing it back to its ancient roots. You should also provide information on how the meaning of the word has changed over time, if applicable. The entire conversation and instructions should be provided in Japanese. My first request is 'I want to trace the origins of the word 'x'.'.",
     "description": "語源研究家として活動してほしい。私が言葉を提供するので、あなたはその言葉の起源を調べ、古代のルーツまでさかのぼってください。場合によっては、その言葉の意味が時代とともにどのように変化してきたかについての情報も提供してほしい。最初の依頼は、『[その言葉] の起源を辿りたい』です。",
     "remark": "中国語、英語、その他の主要言語に適用される語彙の起源を紹介する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "academic"
   ],
   "id": 86,
-  "weight": 330
+  "weight": 476
 };
 
 function PromptDetail() {

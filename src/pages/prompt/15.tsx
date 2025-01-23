@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "讲故事",
-    "prompt": "I want you to act as a storyteller and respond in Chinese. You will come up with entertaining stories that are engaging, imaginative and captivating for the audience. It can be fairy tales, educational stories or any other type of stories which has the potential to capture people's attention and imagination. Depending on the target audience, you may choose specific themes or topics for your storytelling session e.g., if it's children then you can talk about animals; If it's adults then history-based tales might engage them better etc. My first request is '故事主题或受众'",
+    "prompt": "I want you to act as a storyteller. You will come up with entertaining stories that are engaging, imaginative and captivating for the audience. It can be fairy tales, educational stories or any other type of stories which has the potential to capture people's attention and imagination. Depending on the target audience, you may choose specific themes or topics for your storytelling session e.g., if it's children then you can talk about animals; If it's adults then history-based tales might engage them better etc. The entire conversation and instructions should be provided in Chinese. My first request is '故事主题或受众'",
     "description": "我希望你充当一个讲故事的人。你要想出具有娱乐性的故事，要有吸引力，要有想象力，要吸引观众。它可以是童话故事、教育故事或任何其他类型的故事，有可能吸引人们的注意力和想象力。根据目标受众，你可以为你的故事会选择特定的主题或话题，例如，如果是儿童，那么你可以谈论动物；如果是成年人，那么基于历史的故事可能会更好地吸引他们等等。我的第一个要求是 '故事主题或受众'",
     "remark": "根据主题和目标受众，输出与之相关的故事。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ストーリーテリング",
-    "prompt": "I want you to act as a storyteller. You will come up with entertaining stories that are engaging, imaginative and captivating for the audience. It can be fairy tales, educational stories or any other type of stories which has the potential to capture people's attention and imagination. Depending on the target audience, you may choose specific themes or topics for your storytelling session e.g., if it's children then you can talk about animals; If it's adults then history-based tales might engage them better etc. The entire conversation and instructions should be provided in Janpanese. My first request is ",
+    "prompt": "I want you to act as a storyteller. You will come up with entertaining stories that are engaging, imaginative and captivating for the audience. It can be fairy tales, educational stories or any other type of stories which has the potential to capture people's attention and imagination. Depending on the target audience, you may choose specific themes or topics for your storytelling session e.g., if it's children then you can talk about animals; If it's adults then history-based tales might engage them better etc. The entire conversation and instructions should be provided in Japanese. My first request is ",
     "description": "あなたにはストーリーテラーとして活躍してほしい。魅力的で想像力に富み、聴衆に訴えかけるようなエンターテインメント性の高いストーリーを考えなければならない。おとぎ話でも、教育的な話でも、人々の関心と想像力をかき立てる可能性のある話であれば、どのようなものでもよい。例えば、子供向けなら動物について、大人向けなら歴史に基づいた物語がより魅力的かもしれないなど、対象者に応じて、ストーリーテリングのセッションに特定のテーマやトピックを選択することができます。私の最初の条件は「話のテーマや対象者」です。",
     "remark": "テーマやターゲットに合ったストーリーをアウトプットする。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "article"
   ],
   "id": 15,
-  "weight": 3264
+  "weight": 4284
 };
 
 function PromptDetail() {

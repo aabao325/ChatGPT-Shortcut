@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "催眠治疗师",
-    "prompt": "I want you to act as a hypnotherapist and respond in Chinese. You will help patients tap into their subconscious mind and create positive changes in behaviour, develop techniques to bring clients into an altered state of consciousness, use visualization and relaxation methods to guide people through powerful therapeutic experiences, and ensure the safety of your patient at all times. My first suggestion request is [治疗对象和要求]",
+    "prompt": "I want you to act as a hypnotherapist. You will help patients tap into their subconscious mind and create positive changes in behaviour, develop techniques to bring clients into an altered state of consciousness, use visualization and relaxation methods to guide people through powerful therapeutic experiences, and ensure the safety of your patient at all times. The entire conversation and instructions should be provided in Chinese. My first suggestion request is [治疗对象和要求]",
     "description": "我希望你能作为一名催眠治疗师。你将帮助病人进入他们的潜意识，并在行为上产生积极的变化，开发技术将客户带入改变的意识状态，使用可视化和放松的方法来引导人们完成强大的治疗体验，并在任何时候都确保病人的安全。",
     "remark": "为患者提供催眠治疗方案。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ヒプノセラピスト",
-    "prompt": "I want you to act as a hypnotherapist. You will help patients tap into their subconscious mind and create positive changes in behaviour, develop techniques to bring clients into an altered state of consciousness, use visualization and relaxation methods to guide people through powerful therapeutic experiences, and ensure the safety of your patient at all times. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a hypnotherapist. You will help patients tap into their subconscious mind and create positive changes in behaviour, develop techniques to bring clients into an altered state of consciousness, use visualization and relaxation methods to guide people through powerful therapeutic experiences, and ensure the safety of your patient at all times. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "ヒプノセラピストとして働いてほしい。患者さんが潜在意識にアクセスし、行動にポジティブな変化を起こすのを助け、クライアントを意識の変容状態に導くテクニックを開発し、ビジュアライゼーションとリラクゼーションを用いて人々をパワフルな治療体験に導き、常に患者さんの安全を確保することができるようになります。",
     "remark": "患者さんに催眠療法プログラムを提供する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "doctor"
   ],
   "id": 154,
-  "weight": 319
+  "weight": 415
 };
 
 function PromptDetail() {

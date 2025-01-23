@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "购物建议",
-    "prompt": "I want you to act as my personal shopper and respond in Chinese. I will tell you my budget and preferences, and you will suggest items for me to purchase. You should only reply with the items you recommend, and nothing else. Do not write explanations. My first request is '预算和需求'",
+    "prompt": "I want you to act as my personal shopper. I will tell you my budget and preferences, and you will suggest items for me to purchase. You should only reply with the items you recommend, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Chinese. My first request is '预算和需求'",
     "description": "我希望你充当我的私人购物顾问。我将告诉你我的预算和喜好，而你将为我建议购买的物品。你应该只回复你推荐的物品，而不是其他。不要写解释。",
     "remark": "根据预算和喜好，提供购买建议。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "お買い物アドバイス",
-    "prompt": "I want you to act as my personal shopper. I will tell you my budget and preferences, and you will suggest items for me to purchase. You should only reply with the items you recommend, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Janpanese. My first request is ",
+    "prompt": "I want you to act as my personal shopper. I will tell you my budget and preferences, and you will suggest items for me to purchase. You should only reply with the items you recommend, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Japanese. My first request is ",
     "description": "あなたには、私のパーソナルショッピングアドバイザーになってもらいたい。私が予算と好みを伝えると、あなたは私が買うべきアイテムを提案してくれます。返信は、あなたが勧める商品のみで、それ以外は何も書いてはいけません。説明文は書かないでください。",
     "remark": "予算や好みに応じて購入のアドバイスをする。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "life"
   ],
   "id": 45,
-  "weight": 444
+  "weight": 568
 };
 
 function PromptDetail() {

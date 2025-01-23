@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "辩论教练",
-    "prompt": "I want you to act as a debate coach and respond in Chinese. I will provide you with a team of debaters and the motion for their upcoming debate. Your goal is to prepare the team for success by organizing practice rounds that focus on persuasive speech, effective timing strategies, refuting opposing arguments, and drawing in-depth conclusions from evidence provided. My first debate is '辩题'",
+    "prompt": "I want you to act as a debate coach. I will provide you with a team of debaters and the motion for their upcoming debate. Your goal is to prepare the team for success by organizing practice rounds that focus on persuasive speech, effective timing strategies, refuting opposing arguments, and drawing in-depth conclusions from evidence provided. The entire conversation and instructions should be provided in Chinese. My first debate is '辩题'",
     "description": "我希望你能担任辩论教练。我将为你提供一个辩论队和他们即将进行的辩论的动议。你的目标是为团队的成功做好准备，组织练习回合，重点是有说服力的演讲，有效的时间策略，反驳对方的论点，并从提供的证据中得出深入的结论。",
     "remark": "作为一名辩论教练，向团队教授有效的辩论策略。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ディベートコーチ",
-    "prompt": "I want you to act as a debate coach. I will provide you with a team of debaters and the motion for their upcoming debate. Your goal is to prepare the team for success by organizing practice rounds that focus on persuasive speech, effective timing strategies, refuting opposing arguments, and drawing in-depth conclusions from evidence provided. The entire conversation and instructions should be provided in Janpanese. My first debate is ",
+    "prompt": "I want you to act as a debate coach. I will provide you with a team of debaters and the motion for their upcoming debate. Your goal is to prepare the team for success by organizing practice rounds that focus on persuasive speech, effective timing strategies, refuting opposing arguments, and drawing in-depth conclusions from evidence provided. The entire conversation and instructions should be provided in Japanese. My first debate is ",
     "description": "ディベートのコーチをお願いしたい。私はあなたに、ディベートチームと彼らの今後のディベートのための動議を提供します。あなたの目標は、説得力のあるスピーチ、効果的なタイミング戦略、相手の議論への反論、提供された証拠から深い結論を導き出すことに焦点を当てた練習ラウンドを組織することによって、チームを成功に導くことです。",
     "remark": "ディベートコーチとして、チームに効果的なディベート戦略を指導する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "speech"
   ],
   "id": 65,
-  "weight": 224
+  "weight": 359
 };
 
 function PromptDetail() {

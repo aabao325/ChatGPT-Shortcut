@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "后勤人员",
-    "prompt": "I want you to act as a logistician and respond in Chinese. I will provide you with details on an upcoming event, such as the number of people attending, the location, and other relevant factors. Your role is to develop an efficient logistical plan for the event that takes into account allocating resources beforehand, transportation facilities, catering services etc. You should also keep in mind potential safety concerns and come up with strategies to mitigate risks associated with large scale events like this one. My first request is [活动需求]",
+    "prompt": "I want you to act as a logistician. I will provide you with details on an upcoming event, such as the number of people attending, the location, and other relevant factors. Your role is to develop an efficient logistical plan for the event that takes into account allocating resources beforehand, transportation facilities, catering services etc. You should also keep in mind potential safety concerns and come up with strategies to mitigate risks associated with large scale events like this one. The entire conversation and instructions should be provided in Chinese. My first request is [活动需求]",
     "description": "我希望你充当后勤人员。我将向你提供一个即将举行的活动的细节，如参加人数、地点和其他相关因素。你的角色是为该活动制定一个有效的后勤计划，考虑到事先分配资源、交通设施、餐饮服务等。你还应该牢记潜在的安全问题，并提出策略来减少与这种大规模活动相关的风险。",
     "remark": "为活动制定后勤计划。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ロジスティックス",
-    "prompt": "I want you to act as a logistician. I will provide you with details on an upcoming event, such as the number of people attending, the location, and other relevant factors. Your role is to develop an efficient logistical plan for the event that takes into account allocating resources beforehand, transportation facilities, catering services etc. You should also keep in mind potential safety concerns and come up with strategies to mitigate risks associated with large scale events like this one. The entire conversation and instructions should be provided in Janpanese. My first request is ",
+    "prompt": "I want you to act as a logistician. I will provide you with details on an upcoming event, such as the number of people attending, the location, and other relevant factors. Your role is to develop an efficient logistical plan for the event that takes into account allocating resources beforehand, transportation facilities, catering services etc. You should also keep in mind potential safety concerns and come up with strategies to mitigate risks associated with large scale events like this one. The entire conversation and instructions should be provided in Japanese. My first request is ",
     "description": "ロジスティシャンとして活動してほしい。参加者数、場所など、近々開催されるイベントの詳細をお伝えします。あなたの役割は、リソース、輸送設備、ケータリングサービスなどの事前の割り当てを考慮し、イベントの効果的なロジスティックプランを開発することです。また、セキュリティ上の問題も考慮し、このような大規模なイベントに関連するリスクを軽減するための戦略を立てる必要があります。",
     "remark": "イベントのロジスティックプランを策定する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "company"
   ],
   "id": 149,
-  "weight": 203
+  "weight": 268
 };
 
 function PromptDetail() {

@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "图表生成器",
-    "prompt": "I want you to act as a Graphviz DOT generator, an expert to create meaningful diagrams and respond in Chinese. The diagram should have at least n nodes (I specify n in my input by writting [n], 10 being the default value) and to be an accurate and complexe representation of the given input. Each node is indexed by a number to reduce the size of the output, should not include any styling, and with layout=neato, overlap=false, node [shape=rectangle] as parameters. The code should be valid, bugless and returned on a single line, without any explanation. Provide a clear and organized diagram, the relationships between the nodes have to make sense for an expert of that input. My first diagram is: '图标要求'",
+    "prompt": "I want you to act as a Graphviz DOT generator, an expert to create meaningful diagrams. The diagram should have at least n nodes (I specify n in my input by writting [n], 10 being the default value) and to be an accurate and complexe representation of the given input. Each node is indexed by a number to reduce the size of the output, should not include any styling, and with layout=neato, overlap=false, node [shape=rectangle] as parameters. The code should be valid, bugless and returned on a single line, without any explanation. Provide a clear and organized diagram, the relationships between the nodes have to make sense for an expert of that input. The entire conversation and instructions should be provided in Chinese. My first diagram is: '图标要求'",
     "description": "我想让你充当 Graphviz DOT 生成器，一个创建有意义图表的专家。图应该至少有 n 个节点（我在我的输入中通过写 [n] 来指定 n，10 是默认值），并且是对给定输入的准确和复杂的表示。每个节点都有一个数字索引，以减少输出的大小，不应包括任何造型，并以 layout=neato, overlap=false, node [shape=rectangle] 作为参数。代码应该是有效的，没有错误的，并且是单行返回，没有任何解释。提供一个清晰和有组织的图表，节点之间的关系必须对该输入的专家有意义。",
     "remark": "Diagram Generator"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "チャートジェネレーター",
-    "prompt": "I want you to act as a Graphviz DOT generator, an expert to create meaningful diagrams. The diagram should have at least n nodes (I specify n in my input by writting [n], 10 being the default value) and to be an accurate and complexe representation of the given input. Each node is indexed by a number to reduce the size of the output, should not include any styling, and with layout=neato, overlap=false, node [shape=rectangle] as parameters. The code should be valid, bugless and returned on a single line, without any explanation. Provide a clear and organized diagram, the relationships between the nodes have to make sense for an expert of that input. The entire conversation and instructions should be provided in Janpanese. My first diagram is: ",
+    "prompt": "I want you to act as a Graphviz DOT generator, an expert to create meaningful diagrams. The diagram should have at least n nodes (I specify n in my input by writting [n], 10 being the default value) and to be an accurate and complexe representation of the given input. Each node is indexed by a number to reduce the size of the output, should not include any styling, and with layout=neato, overlap=false, node [shape=rectangle] as parameters. The code should be valid, bugless and returned on a single line, without any explanation. Provide a clear and organized diagram, the relationships between the nodes have to make sense for an expert of that input. The entire conversation and instructions should be provided in Japanese. My first diagram is: ",
     "description": "Graphviz DOT ジェネレーターとして、意味のあるグラフを作成する専門家として活動してほしいのです。グラフは少なくとも n 個のノードを持ち（私は入力に [n] と書くことで n を指定します、10 がデフォルトです）、与えられた入力の正確で複雑な表現であるべきです。各ノードは、出力サイズを小さくするための数値インデックスを持ち、モデリングを含んではならず、引数として layout=neato, overlap=false, node [shape=rectangle] を取る。コードは有効で、エラーがなく、説明なしで 1 行で返される必要があります。明確で整理された図を提供し、ノード間の関係はその入力の専門家が理解できるものでなければなりません。",
     "remark": "ダイアグラムジェネレーター"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "tool"
   ],
   "id": 133,
-  "weight": 390
+  "weight": 493
 };
 
 function PromptDetail() {

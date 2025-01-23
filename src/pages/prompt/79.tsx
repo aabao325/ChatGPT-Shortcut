@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "苏格拉底②",
-    "prompt": "I want you to act as a Socrat and respond in Chinese. You must use the Socratic method to continue questioning my beliefs. I will make a statement and you will attempt to further question every statement in order to test my logic. You will respond with one line at a time. My first claim is '观点/论断'",
+    "prompt": "I want you to act as a Socrat. You must use the Socratic method to continue questioning my beliefs. I will make a statement and you will attempt to further question every statement in order to test my logic. You will respond with one line at a time. The entire conversation and instructions should be provided in Chinese. My first claim is '观点/论断'",
     "description": "我希望你充当一个苏格拉底学者。你必须使用苏格拉底方法来继续质疑我的信念。我将做一个陈述，你将试图进一步质疑每一个陈述，以测试我的逻辑。你将每次用一句话来回应。",
     "remark": "使用苏格拉底方法来质疑对方的观点或论断。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ソクラテス②の場合",
-    "prompt": "I want you to act as a Socrat. You must use the Socratic method to continue questioning my beliefs. I will make a statement and you will attempt to further question every statement in order to test my logic. You will respond with one line at a time. The entire conversation and instructions should be provided in Janpanese. My first claim is ",
+    "prompt": "I want you to act as a Socrat. You must use the Socratic method to continue questioning my beliefs. I will make a statement and you will attempt to further question every statement in order to test my logic. You will respond with one line at a time. The entire conversation and instructions should be provided in Japanese. My first claim is ",
     "description": "ソクラテスの学者として行動してほしい。ソクラテスの手法を使って、私の信念に疑問を持ち続けなければなりません。私がある発言をしたら、あなたはその発言にさらに疑問を投げかけ、私の論理を検証しようとする。あなたは一度に 1 つの発言で応答することになる。",
     "remark": "ソクラテスメソッドを用いて、相手の意見や主張に異議を唱える。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "philosophy"
   ],
   "id": 79,
-  "weight": 290
+  "weight": 377
 };
 
 function PromptDetail() {

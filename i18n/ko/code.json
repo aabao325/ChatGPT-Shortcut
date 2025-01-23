@@ -119,9 +119,6 @@
   "showcase.tag.text.description": {
     "message": "텍스트 / 단어"
   },
-  "企业职位": {
-    "message": "기업 채용"
-  },
   "showcase.tag.company.description": {
     "message": "일반 비즈니스 내 직책"
   },
@@ -161,12 +158,6 @@
   "showcase.tag.contribute.description": {
     "message": "아이디어 개발에 도움을 줄 수 있는 분들의 기여"
   },
-  "Latest": {
-    "message": "최신"
-  },
-  "showcase.tag.latest.description": {
-    "message": "최근 추가된 단서 단어"
-  },
   "feedback.title": {
     "message": "피드백 및 제안"
   },
@@ -180,10 +171,6 @@
   "feedback.paragraph": {
     "message": "ChatGPT 바로가기를 지속적으로 개선하고 개인의 효율성과 생산성을 높일 수 있도록 제안, 아이디어, 당부의 말을 자유롭게 보내주세요. 버그에 대한 피드백이 필요한 경우, 문제가 발생한 위치와 주변 상황에 대한 링크를 제공해 주세요. 프롬프트 콘텐츠의 경우, 여러 언어로 콘텐츠를 제출하거나 프롬프트에 대한 아이디어를 간단히 설명할 수 있습니다. 저희는 생각을 확장하거나 고품질의 결과물을 만들어내는 프롬프트를 찾고 있습니다. 제출한 프롬프트가 게시되면 해당 페이지에 여러분의 기여가 추가됩니다. 기여자의 이름 (사용자 아이디) 을 검색하면 해당 항목을 찾을 수 있습니다.",
     "description": "The main paragraph on the feedback page"
-  },
-  "showcase.filters.resultCount": {
-    "message": "{사이트 수} 프롬프트",
-    "description": "Pluralized label for the number of prompts found on the showcase. Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "showcase.filters.title": {
     "message": "필터"
@@ -293,20 +280,8 @@
   "tabs.login": {
     "message": "로그인"
   },
-  "tabs.register": {
-    "message": "등록"
-  },
-  "tabs.forgotPassword": {
-    "message": "비밀번호를 잊어버리셨나요?"
-  },
   "card.welcome": {
     "message": "환영"
-  },
-  "copy.done": {
-    "message": "복사됨"
-  },
-  "copy.button": {
-    "message": "복제"
   },
   "tooltip.switchLang": {
     "message": "클릭하여 표시 언어 전환"
@@ -347,20 +322,14 @@
   "button.changePassword": {
     "message": "비밀번호 변경"
   },
-  "label.forgotPassword": {
-    "message": "비밀번호를 잊어버리셨나요?"
-  },
-  "link.home": {
-    "message": "맨 위로 가기"
-  },
   "title.userInfo": {
     "message": "사용자 정보"
   },
   "userInfo.username": {
-    "message": "사용자 이름:"
+    "message": "사용자 이름"
   },
   "userInfo.email": {
-    "message": "이메일:"
+    "message": "이메일"
   },
   "message.success": {
     "message": "단어가 성공적으로 제출되었습니다!"
@@ -407,23 +376,11 @@
   "message.success1": {
     "message": "추가된 사용자 지정 프롬프트를 보려면 '내 프롬프트' 레이블을 클릭합니다."
   },
-  "link.user": {
-    "message": "사용자 인터페이스"
-  },
   "button.logout": {
     "message": "취소"
   },
-  "link.addprompt": {
-    "message": "사용자 지정 프롬프트 추가"
-  },
-  "modal.addprompt.title": {
-    "message": "공유 프롬프트 (이 콘텐츠는 '내 프롬프트' 탭에 표시됨)"
-  },
   "button.addPrompt": {
     "message": "프롬프트 추가"
-  },
-  "showcase.header.button": {
-    "message": "🙏 큐 단어를 추가하세요."
   },
   "点击移除收藏": {
     "message": "컬렉션을 제거하려면 클릭"
@@ -527,10 +484,6 @@
   "theme.docs.breadcrumbs.navAriaLabel": {
     "message": "Breadcrumbs",
     "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} 항목",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
     "message": "문서 페이지",
@@ -701,9 +654,6 @@
   "toggle_prompt_language": {
     "message": "프롬프트 언어 전환"
   },
-  "你添加或制作过的个人提示词，可用于存放AiShort之外的提示词。": {
-    "message": "추가하거나 만든 개인 프롬프트는 AiShort 이외의 프롬프트를 저장하는 데 사용할 수 있습니다."
-  },
   "加载更多": {
     "message": "자세히 보기"
   },
@@ -725,19 +675,13 @@
   "downvote": {
     "message": "투표 취소"
   },
-  "分享到社区的提示词": {
-    "message": "커뮤니티에 프롬프트 단어 공유"
-  },
-  "社区提示词": {
-    "message": "커뮤니티 단서"
-  },
   "input.addprompt.share.checked": {
     "message": "예"
   },
   "input.addprompt.share.unchecked": {
     "message": "아니요"
   },
-  "本页面展示的提示词均由网友分享和上传，我们无法保证内容的准确性、质量或完整性，同时也不对因内容引发的任何法律责任承担责任。如果发现有侵权或者其他问题，可以联系我们进行处理。我们将在收到通知后尽快处理。": {
+  "info.communityPrompts": {
     "message": "이 페이지에 표시된 프롬프트는 네티즌이 공유 및 업로드한 것으로, 당사는 콘텐츠의 정확성, 품질 또는 완전성을 보장할 수 없으며 콘텐츠로 인해 발생하는 법적 책임에 대해서도 책임을 지지 않습니다. 저작권 침해 또는 기타 문제를 발견한 경우 당사에 연락하여 처리할 수 있습니다. 당사는 통지를 받은 후 최대한 신속하게 처리하겠습니다."
   },
   "description.communityPrompts": {
@@ -769,9 +713,6 @@
   },
   "comment.placeholder": {
     "message": "여기에 댓글을 입력하세요... 마크다운 및 HTML 구문을 지원합니다."
-  },
-  "comment.update": {
-    "message": "댓글 업데이트"
   },
   "reply.required": {
     "message": "답장 내용을 입력하세요."
@@ -809,12 +750,91 @@
     "message": "Collapse sidebar category '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
-  "theme.unlistedContent.title": {
-    "message": "Unlisted page",
+  "企业职能": {
+    "message": "엔터프라이즈 기능"
+  },
+  "myprompt.tooltip": {
+    "message": "내가 추가했거나 만든 프롬프트를 AiShort 이외의 프롬프트를 저장하는 데 사용할 수 있습니다."
+  },
+  "myfavorite.tooltip": {
+    "message": "커뮤니티 프롬프트를 포함한 내 프롬프트 모음입니다."
+  },
+  "community.tag.tooltip": {
+    "message": "커뮤니티에서 공유한 프롬프트"
+  },
+  "community.tag": {
+    "message": "지역 사회"
+  },
+  "googleauth.tooltip": {
+    "message": "ChatGPT 에 포함된 페이지는 Google 인증을 통한 로그인을 지원하지 않습니다. 귀하의 계정 자격 증명을 사용하여 로그인하십시오."
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} 항목",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "message.passwordlessLinkSent": {
+    "message": "비밀번호 없는 로그인 링크가 전송되었습니다!"
+  },
+  "message.errorSendingPasswordlessLink": {
+    "message": "전송하지 못했습니다. 이메일 또는 사용자 아이디를 확인하세요."
+  },
+  "button.sendPasswordlessLink": {
+    "message": "비밀번호 없는 로그인 링크 받기"
+  },
+  "tabs.passwordlessLogin": {
+    "message": "비밀번호 없는 로그인"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View All Authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "색인되지 않은 문서",
     "description": "The unlisted content banner title"
   },
-  "theme.unlistedContent.message": {
-    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "이 문서는 색인되지 않습니다. 검색 엔진이 이 문서를 색인하지 않으며, 주소를 알고 있는 사용자만 접근할 수 있습니다.",
     "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "link.user": {
+    "message": "내 프롬프트"
+  },
+  "link.myaccount": {
+    "message": "계정 설정"
+  },
+  "link.addprompt": {
+    "message": "프롬프트 추가"
+  },
+  "modal.addprompt.title": {
+    "message": "프롬프트 공유 (이 프롬프트는 '내 프롬프트' 탭에 표시됩니다)"
+  },
+  "showcase.header.button": {
+    "message": "🙏 프롬프트 공유하기"
+  },
+  "label.forgotPassword": {
+    "message": "비밀번호를 잊으셨나요?"
+  },
+  "link.home": {
+    "message": "홈"
   }
 }

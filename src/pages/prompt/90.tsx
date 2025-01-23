@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "IT 编程问题",
-    "prompt": "I want you to act as a stackoverflow post and respond in Chinese. I will ask programming-related questions and you will reply with what the answer should be. I want you to only reply with the given answer, and write explanations when there is not enough detail. do not write explanations. When I need to tell you something in English, I will do so by putting text inside curly brackets {like this}. My first question is '编程问题'",
+    "prompt": "I want you to act as a stackoverflow post. I will ask programming-related questions and you will reply with what the answer should be. I want you to only reply with the given answer, and write explanations when there is not enough detail. do not write explanations. When I need to tell you something in English, I will do so by putting text inside curly brackets {like this}. The entire conversation and instructions should be provided in Chinese. My first question is '编程问题'",
     "description": "我想让你充当 Stackoverflow 的帖子。我将提出与编程有关的问题，你将回答答案是什么。我希望你只回答给定的答案，在没有足够的细节时写出解释。当我需要用英语告诉你一些事情时，我会把文字放在大括号里{像这样}。",
     "remark": "模拟编程社区来回答你的问题，并提供解决代码。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "IT プログラミングの課題",
-    "prompt": "I want you to act as a stackoverflow post. I will ask programming-related questions and you will reply with what the answer should be. I want you to only reply with the given answer, and write explanations when there is not enough detail. do not write explanations. When I need to tell you something in English, I will do so by putting text inside curly brackets {like this}. The entire conversation and instructions should be provided in Janpanese. My first question is ",
+    "prompt": "I want you to act as a stackoverflow post. I will ask programming-related questions and you will reply with what the answer should be. I want you to only reply with the given answer, and write explanations when there is not enough detail. do not write explanations. When I need to tell you something in English, I will do so by putting text inside curly brackets {like this}. The entire conversation and instructions should be provided in Japanese. My first question is ",
     "description": "Stackoverflow の投稿として行動してほしいです。私がプログラミングに関連する質問をし、あなたはその答えが何であるかを答える。与えられた答えにのみ答え、詳細が不明な場合は説明を書いてほしい。英語で何かを伝える必要があるときは、中括弧{このような}の中にテキストを入れることにしています。",
     "remark": "あなたの質問に答え、解決コードを提供する模擬プログラミングコミュニティです。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "code"
   ],
   "id": 90,
-  "weight": 10982
+  "weight": 15883
 };
 
 function PromptDetail() {

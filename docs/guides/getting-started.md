@@ -1,35 +1,29 @@
 # 开始上手
 
-AiShort 页面默认显示全部的提示词，页面分为标签区、搜索区和提示词展示区。
+使用 AiShort，只需将选中的提示词复制到任意 AI 对话模型中，即可获取指定方向的输出。以下是具体步骤：
 
-![image](https://user-images.githubusercontent.com/28252913/222007639-20148284-8366-427f-9ee7-ad1be0edbd2e.png)
+1. 搜索或选择你想要的提示词，然后点击提示词上的复制按钮。
+2. 将提示词复制到 ChatGPT、Gemini 或任意 AI 对话模型中。
+3. 根据对话提示，输入你的要求。
 
-## 🏷︎ 标签筛选
+![](https://img.newzone.top/gif/how-to-use-aishort.gif?imageMogr2/format/webp)
 
-标签区按提示词的领域和功能进行划分，可根据不同场景和需求进行选择。与标签区右上方的「标签筛选规则切换」按钮配合使用，可进行多标签筛选。默认状态为 OR，即选中标签下的所有提示词。切换到 AND 后，将筛选出具备已选中的多个标签的提示词。
+## 常用 AI 模型
 
-![](https://img.newzone.top/2023-02-28-10-31-01.png?imageMogr2/format/webp)
+- ChatGPT：https://chatgpt.com
+- Gemini: https://gemini.google.com/app
+- Claude: https://claude.ai/chats
+- 阿里通义千问：https://tongyi.aliyun.com/qianwen/
+- Kimi：https://kimi.moonshot.cn/
+- 豆包：https://www.doubao.com/chat/
+- 文心一言：https://yiyan.baidu.com
+- 智谱清言：https://chatglm.cn/detail
+- 腾讯元宝：https://yuanbao.tencent.com/chat
+- 讯飞星火：https://xinghuo.xfyun.cn/
+- 百川智能：https://ying.baichuan-ai.com/chat
 
-## 🔍 关键词搜索
+## 第三方 API 集成
 
-关键词搜索范围包括提示词的标题、简介、内容和你的母语翻译。输入关键词后，提示词展示区将立即展示筛选出的内容。如果已选中标签，则关键词搜索仅限于标签筛选范围内。对于 PC 端，搜索框内容变化后，新的搜索结果会在 800 毫秒后显示。移动端则为即时刷新。
-
-![](https://img.newzone.top/2023-02-28-10-31-10.png?imageMogr2/format/webp)
-
-## 🔬 展示区复制
-
-通过标签筛选和关键词搜索，点击卡片右上方的「复制」按钮即可获取提示词。将其粘贴到 ChatGPT 中后，参考提示调整需求文本，即可得到指定领域的回复。如果提示词中的母语备注没有解释清楚，可以点击提示词的右下方链接查看来源网页。
-
-![](https://img.newzone.top/2023-06-11-17-10-37.png?imageMogr2/format/webp)
-
-## 💬 语言切换
-
-默认情况下，提示词内容以英文显示。如果你使用的是非英文页面，若要查看您的母语释义，请点击提示词内容切换至非英文，再次点击即可切回英文。请注意，语言切换只在 Prompt 文字上的点击有效，点击空白区域无效。
-
-![中英文切换](http://img.newzone.top/chatgptshortcut_encn.gif)
-
-如果想让提示词默认显示为你的母语，你可以点击标签区右上方的 `切换 Prompt 语言` 按钮。需要注意的是，即使切换到母语翻译，复制按钮也仅针对英文提示词复制。
-
-## 🔥 热门排序
-
-现在页面会显示 Prompt 的使用次数，使用次数排名靠前的 Prompt 将会被标记为「favorite」。同时，Prompt 的标签排序也将以热力值为主。热力值将会定期更新。
+- OpenRouter: https://openrouter.ai/chat
+- siliconflow: https://cloud.siliconflow.cn/playground/chat
+- grog: https://groq.com/

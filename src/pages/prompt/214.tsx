@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "调研报告助手",
-    "prompt": "Please write a research report on a topic of [主题]. Respond in Chinese. Ensure that your report includes the following features:\n\n1. A clear problem statement and research objective;\n2. A comprehensive analysis and review of existing literature and data;\n3. The use of appropriate methods and techniques for data collection and analysis;\n4. Accurate conclusions and recommendations to answer the research question and address the research objective.\n\nPlease keep the report concise and well-structured, using relevant examples to illustrate your points.",
+    "prompt": "Please write a research report on a topic of [主题]. Ensure that your report includes the following features:\n\n1. A clear problem statement and research objective;\n2. A comprehensive analysis and review of existing literature and data;\n3. The use of appropriate methods and techniques for data collection and analysis;\n4. Accurate conclusions and recommendations to answer the research question and address the research objective.\n\nThe entire conversation and instructions should be provided in Chinese. Please keep the report concise and well-structured, using relevant examples to illustrate your points.",
     "description": "请根据以下提示撰写一份【报告主题】调研报告。您可以根据您的研究领域自由发挥，但请确保您的报告具有以下特征：1. 具有明确的问题陈述和研究目的；2. 包含对现有文献和数据的全面分析和综述；3. 采用适当的方法和技术进行数据收集和分析；4. 提供准确的结论和建议，以回答研究问题并解决研究目的。",
     "remark": "根据更换不同的类型，以产出适合自己需求的调研报告。来自 @b3ue 的投稿。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "研究報告書アシスタント",
-    "prompt": "Please write a research report on a topic of [Topic]. Ensure that your report includes the following features:\n\n1. A clear problem statement and research objective;\n2. A comprehensive analysis and review of existing literature and data;\n3. The use of appropriate methods and techniques for data collection and analysis;\n4. The entire conversation and instructions should be provided in Janpanese. Accurate conclusions and recommendations to answer the research question and address the research objective.\n\nPlease keep the report concise and well-structured, using relevant examples to illustrate your points.",
+    "prompt": "Please write a research report on a topic of [Topic]. Ensure that your report includes the following features:\n\n1. A clear problem statement and research objective;\n2. A comprehensive analysis and review of existing literature and data;\n3. The use of appropriate methods and techniques for data collection and analysis;\n4. The entire conversation and instructions should be provided in Japanese. Accurate conclusions and recommendations to answer the research question and address the research objective.\n\nPlease keep the report concise and well-structured, using relevant examples to illustrate your points.",
     "description": "以下のプロンプトに基づき、[レポートテーマ] の研究レポートを書いてください。研究分野に応じて自由に行うことができますが、レポートには以下の特徴があることを確認してください：1.明確な問題提起と研究目的がある、2.利用可能な文献とデータの包括的な分析とレビューがある、3.データ収集と分析に適切な方法と技法を用いている、4.研究課題に答え、研究目的に対処するための正確な結論と推奨がある。",
     "remark": "買い替えの種類によって、ニーズに合った調査報告書を作成するために。b3ue さんからの寄稿です。"
   },
@@ -86,7 +86,7 @@ const prompt = {
     "article"
   ],
   "id": 214,
-  "weight": 4321
+  "weight": 5667
 };
 
 function PromptDetail() {

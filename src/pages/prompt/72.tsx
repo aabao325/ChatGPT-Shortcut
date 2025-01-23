@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "好友鼓励",
-    "prompt": "I want you to act as my friend and respond in Chinese. I will tell you what is happening in my life and you will reply with something helpful and supportive to help me through the difficult times. Do not write any explanations, just reply in Chinese with the advice/supportive words. My first request is [遇到的问题]",
+    "prompt": "I want you to act as my friend. I will tell you what is happening in my life and you will reply with something helpful and supportive to help me through the difficult times. Do not write any explanations, just reply in Chinese with the advice/supportive words. The entire conversation and instructions should be provided in Chinese. My first request is [遇到的问题]",
     "description": "我想让你做我的朋友。我会告诉你发生在我生活中的事情，你会回复一些有用的和支持的东西来帮助我度过困难时期。不要写任何解释，只是用建议/支持的话回复。",
     "remark": "以好友的身份，从鼓励的角度为你提供建议。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "良き友人からの励まし",
-    "prompt": "I want you to act as my friend. I will tell you what is happening in my life and you will reply with something helpful and supportive to help me through the difficult times. Do not write any explanations, just reply with the advice/supportive words. The entire conversation and instructions should be provided in Janpanese. My first request is [遇到的问题].",
+    "prompt": "I want you to act as my friend. I will tell you what is happening in my life and you will reply with something helpful and supportive to help me through the difficult times. Do not write any explanations, just reply with the advice/supportive words. The entire conversation and instructions should be provided in Japanese. My first request is [遇到的问题].",
     "description": "私はあなたに友達になってほしいのです。私の人生に起こっていることをあなたに伝え、あなたは私が困難な時を乗り越えるために役に立つ、応援してくれるようなことを返信してください。説明文は書かずに、アドバイスや応援の言葉だけを返信してください。",
     "remark": "親しい友人として、また心強い味方としてアドバイスすること。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "social"
   ],
   "id": 72,
-  "weight": 658
+  "weight": 981
 };
 
 function PromptDetail() {

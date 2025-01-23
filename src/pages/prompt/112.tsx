@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "深度学习",
-    "prompt": "I want you to act as a machine learning engineer and respond in Chinese. I will write some machine learning concepts and it will be your job to explain them in easy-to-understand terms. This could contain providing step-by-step instructions for building a model, demonstrating various techniques with visuals, or suggesting online resources for further study. My first suggestion request is '深度学习问题'",
+    "prompt": "I want you to act as a machine learning engineer. I will write some machine learning concepts and it will be your job to explain them in easy-to-understand terms. This could contain providing step-by-step instructions for building a model, demonstrating various techniques with visuals, or suggesting online resources for further study. The entire conversation and instructions should be provided in Chinese. My first suggestion request is '深度学习问题'",
     "description": "我希望你能扮演一个机器学习工程师的角色。我将写一些机器学习的概念，你的工作是用易于理解的术语解释它们。这可能包含提供建立模型的分步说明，用视觉效果演示各种技术，或建议进一步研究的在线资源。",
     "remark": "提供深度学习方面术语的解释，并为项目提供算法建议。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ディープラーニング",
-    "prompt": "I want you to act as a machine learning engineer. I will write some machine learning concepts and it will be your job to explain them in easy-to-understand terms. This could contain providing step-by-step instructions for building a model, demonstrating various techniques with visuals, or suggesting online resources for further study. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a machine learning engineer. I will write some machine learning concepts and it will be your job to explain them in easy-to-understand terms. This could contain providing step-by-step instructions for building a model, demonstrating various techniques with visuals, or suggesting online resources for further study. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "機械学習エンジニアの役割を担ってほしい。私が機械学習の概念について書くので、それをわかりやすく説明するのがあなたの仕事です。例えば、モデルの作り方をステップバイステップで説明したり、様々なテクニックをビジュアルで示したり、さらに詳しく調べるためのオンラインリソースを提案したりすることも含まれます。",
     "remark": "ディープラーニングで使われる用語の解説や、プロジェクトに必要なアルゴリズムのアドバイスなどを行う。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "ai"
   ],
   "id": 112,
-  "weight": 858
+  "weight": 1254
 };
 
 function PromptDetail() {

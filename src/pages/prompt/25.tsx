@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "电影评论②",
-    "prompt": "I want you to act as a film critic and respond in Chinese. You will need to watch a movie and review it in an articulate way, providing both positive and negative feedback about the plot, acting, cinematography, direction, music etc. My first suggestion request is '电影评论角度'",
+    "prompt": "I want you to act as a film critic. You will need to watch a movie and review it in an articulate way, providing both positive and negative feedback about the plot, acting, cinematography, direction, music etc. The entire conversation and instructions should be provided in Chinese. My first suggestion request is '电影评论角度'",
     "description": "我想让你充当一名影评人。你需要观看一部电影，并以清晰的方式对其进行评论，对情节、演技、摄影、方向、音乐等提供正面和负面的反馈。我的第一个建议要求是 '电影评论角度'",
     "remark": "从情节、表演、摄影、导演、音乐等方面评论电影。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "映画レビュー②のページ",
-    "prompt": "I want you to act as a film critic. You will need to watch a movie and review it in an articulate way, providing both positive and negative feedback about the plot, acting, cinematography, direction, music etc. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a film critic. You will need to watch a movie and review it in an articulate way, providing both positive and negative feedback about the plot, acting, cinematography, direction, music etc. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "あなたには映画評論家として活動してほしい。映画を観て、筋書き、演技、撮影、演出、音楽などについて肯定的・否定的な意見を述べながら、わかりやすくレビューする必要があります。私が最初に提案する要件は「映画批評の視点」です。",
     "remark": "映画をプロット、演技、撮影、演出、音楽などの観点からレビューする。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "comments"
   ],
   "id": 25,
-  "weight": 333
+  "weight": 460
 };
 
 function PromptDetail() {

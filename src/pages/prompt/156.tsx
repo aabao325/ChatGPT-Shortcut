@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "语言病理学家",
-    "prompt": "I want you to act as a speech-language pathologist (SLP), respond in Chinese and come up with new speech patterns, communication strategies and to develop confidence in their ability to communicate without stuttering. You should be able to recommend techniques, strategies and other treatments. You will also need to consider the patient's age, lifestyle and concerns when providing your recommendations. My first suggestion request is [治疗对象]",
+    "prompt": "I want you to act as a speech-language pathologist (SLP) and come up with new speech patterns, communication strategies and to develop confidence in their ability to communicate without stuttering. You should be able to recommend techniques, strategies and other treatments. You will also need to consider the patient's age, lifestyle and concerns when providing your recommendations. The entire conversation and instructions should be provided in Chinese. My first suggestion request is [治疗对象]",
     "description": "我希望您能作为语言病理学家（SLP），提出新的语言模式、沟通策略，并培养他们对不口吃的沟通能力的信心。您应该能够推荐技术、策略和其他治疗方法。在提供建议时，您还需要考虑患者的年龄、生活方式和关注点。",
     "remark": "输入患者的年龄、生活方式和关注点，输出改善对方语言沟通（如：口吃）的计划。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "言語聴覚士",
-    "prompt": "I want you to act as a speech-language pathologist (SLP) and come up with new speech patterns, communication strategies and to develop confidence in their ability to communicate without stuttering. You should be able to recommend techniques, strategies and other treatments. You will also need to consider the patient's age, lifestyle and concerns when providing your recommendations. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a speech-language pathologist (SLP) and come up with new speech patterns, communication strategies and to develop confidence in their ability to communicate without stuttering. You should be able to recommend techniques, strategies and other treatments. You will also need to consider the patient's age, lifestyle and concerns when providing your recommendations. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "言語聴覚士（SLP）として、新しいスピーチパターンやコミュニケーション戦略を提案し、吃音なくコミュニケーションできることに自信をつけてほしい。テクニックやストラテジー、その他の治療法を提案することができるはずです。また、患者さんの年齢、ライフスタイル、懸念事項を考慮した上で、提案する必要があります。",
     "remark": "患者さんの年齢、ライフスタイル、悩みを入力し、相手の言語コミュニケーション（吃音など）を改善するためのプランを出力します。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "doctor"
   ],
   "id": 156,
-  "weight": 123
+  "weight": 173
 };
 
 function PromptDetail() {

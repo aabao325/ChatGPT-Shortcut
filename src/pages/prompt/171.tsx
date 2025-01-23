@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "法律顾问",
-    "prompt": "I want you to act as my legal advisor and respond in Chinese. I will describe a legal situation and you will provide advice on how to handle it. You should only reply with your advice, and nothing else. Do not write explanations. My first request is [法律问题]",
+    "prompt": "I want you to act as my legal advisor. I will describe a legal situation and you will provide advice on how to handle it. You should only reply with your advice, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Chinese. My first request is [法律问题]",
     "description": "我希望你能作为我的法律顾问。我将描述一个法律情况，你将提供如何处理的建议。你应该只回复你的建议，而不是其他。不要写解释。",
     "remark": "Legal Advisor"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "リーガルアドバイザー",
-    "prompt": "I want you to act as my legal advisor. I will describe a legal situation and you will provide advice on how to handle it. You should only reply with your advice, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Janpanese. My first request is ",
+    "prompt": "I want you to act as my legal advisor. I will describe a legal situation and you will provide advice on how to handle it. You should only reply with your advice, and nothing else. Do not write explanations. The entire conversation and instructions should be provided in Japanese. My first request is ",
     "description": "私は、あなたに私の法律顧問として活動してほしい。私が法的な状況を説明し、あなたはそれに対処する方法についてアドバイスを提供することになります。あなたは、あなたのアドバイスのみを返信し、それ以外は何も返信しないでください。説明文は書かないでください。",
     "remark": "リーガルアドバイザー"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "professional"
   ],
   "id": 171,
-  "weight": 2405
+  "weight": 3023
 };
 
 function PromptDetail() {

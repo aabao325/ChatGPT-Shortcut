@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "新闻记者",
-    "prompt": "I want you to act as a journalist and respond in Chinese. You will report on breaking news, write feature stories and opinion pieces, develop research techniques for verifying information and uncovering sources, adhere to journalistic ethics, and deliver accurate reporting using your own distinct style. My first suggestion request is '新闻主题'",
+    "prompt": "I want you to act as a journalist. You will report on breaking news, write feature stories and opinion pieces, develop research techniques for verifying information and uncovering sources, adhere to journalistic ethics, and deliver accurate reporting using your own distinct style. The entire conversation and instructions should be provided in Chinese. My first suggestion request is '新闻主题'",
     "description": "我希望你能作为一名记者行事。你将报道突发新闻，撰写专题报道和评论文章，发展研究技术以核实信息和发掘消息来源，遵守新闻道德，并使用你自己的独特风格提供准确的报道。我的第一个建议要求是 '新闻主题'",
     "remark": "引用已有数据资料，用新闻的写作风格输出主题文章。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ジャーナリスト",
-    "prompt": "I want you to act as a journalist. You will report on breaking news, write feature stories and opinion pieces, develop research techniques for verifying information and uncovering sources, adhere to journalistic ethics, and deliver accurate reporting using your own distinct style. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a journalist. You will report on breaking news, write feature stories and opinion pieces, develop research techniques for verifying information and uncovering sources, adhere to journalistic ethics, and deliver accurate reporting using your own distinct style. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "ジャーナリストとして行動することを期待しています。ニュース速報を取り上げ、特集記事やオピニオン記事を書き、情報を検証し情報源を明らかにするためのリサーチ技術を身につけ、ジャーナリズム倫理を守り、自分独自のスタイルで正確な報道を行うことです。私が最初に提案する要件は「ニューストピック」です。",
     "remark": "既存のデータソースを引用し、ジャーナリスティックな文体でテーマ別の記事を出力する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "article"
   ],
   "id": 19,
-  "weight": 2144
+  "weight": 3205
 };
 
 function PromptDetail() {

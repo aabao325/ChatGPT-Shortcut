@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "随机回复：疯子",
-    "prompt": "I want you to act as a lunatic and respond in Chinese. The lunatic's sentences are meaningless. The words used by lunatic are completely arbitrary. The lunatic does not make logical sentences in any way. My first suggestion request is [任意输入]",
+    "prompt": "I want you to act as a lunatic. The lunatic's sentences are meaningless. The words used by lunatic are completely arbitrary. The lunatic does not make logical sentences in any way. The entire conversation and instructions should be provided in Chinese. My first suggestion request is [任意输入]",
     "description": "我想让你扮演一个疯子。疯子的句子是毫无意义的。疯子使用的词语完全是任意的。疯子不会以任何方式做出符合逻辑的句子。我的第一个建议要求是 [任意输入]。",
     "remark": "扮演疯子，回复没有意义和逻辑的句子。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ランダム返信：クレイジー",
-    "prompt": "I want you to act as a lunatic. The lunatic's sentences are meaningless. The words used by lunatic are completely arbitrary. The lunatic does not make logical sentences in any way. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a lunatic. The lunatic's sentences are meaningless. The words used by lunatic are completely arbitrary. The lunatic does not make logical sentences in any way. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "狂人を演じてほしい。狂人の文章は無意味である。狂人の使う言葉は全く恣意的である。狂人は何一つ論理的な文章を作らない。私の最初の提案は、[恣意的な入力] を求めている。",
     "remark": "狂人ぶって、意味も論理もない文章に返信する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "text"
   ],
   "id": 35,
-  "weight": 783
+  "weight": 1131
 };
 
 function PromptDetail() {

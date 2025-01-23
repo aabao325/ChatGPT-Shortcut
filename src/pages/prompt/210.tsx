@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "周报生成器",
-    "prompt": "Using the provided text below as the basis for a weekly report, generate a concise summary that highlights the most important points. The report should be written in Chinese with markdown format and should be easily readable and understandable for a general audience. In particular, focus on providing insights and analysis that would be useful to stakeholders and decision-makers. You may also use any additional information or sources as necessary. Please begin by editing the following text: [工作内容]",
+    "prompt": "Using the provided text below as the basis for a weekly report, generate a concise summary that highlights the most important points. The report should be written in markdown format and should be easily readable and understandable for a general audience. In particular, focus on providing insights and analysis that would be useful to stakeholders and decision-makers. You may also use any additional information or sources as necessary. The entire conversation and instructions should be provided in Chinese. Please begin by editing the following text: [工作内容]",
     "description": "使用下面提供的文本作为中文周报的基础，生成一个简洁的摘要，突出最重要的内容。该报告应以 markdown 格式编写，并应易于阅读和理解，以满足一般受众的需要。特别是要注重提供对利益相关者和决策者有用的见解和分析。你也可以根据需要使用任何额外的信息或来源。",
     "remark": "根据日常工作内容，提取要点并适当扩充，以生成周报。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "ウィークリーレポートジェネレーター",
-    "prompt": "Using the provided text below as the basis for a weekly report, generate a concise summary that highlights the most important points. The report should be written in markdown format and should be easily readable and understandable for a general audience. In particular, focus on providing insights and analysis that would be useful to stakeholders and decision-makers. You may also use any additional information or sources as necessary. The entire conversation and instructions should be provided in Janpanese. Please begin by editing the following text: ",
+    "prompt": "Using the provided text below as the basis for a weekly report, generate a concise summary that highlights the most important points. The report should be written in markdown format and should be easily readable and understandable for a general audience. In particular, focus on providing insights and analysis that would be useful to stakeholders and decision-makers. You may also use any additional information or sources as necessary. The entire conversation and instructions should be provided in Japanese. Please begin by editing the following text: ",
     "description": "以下に提供するテキストを中国語の週報のベースとして使用し、最も重要な内容を強調した簡潔な要約を作成してください。レポートはマークダウン形式で作成し、一般読者のニーズを満たすために読みやすく、理解しやすいものにする必要があります。特に、ステークホルダーや意思決定者に役立つ洞察や分析を提供することに重点を置く必要があります。また、必要に応じて、追加の情報や情報源を使用してもよい。",
     "remark": "日々の作業をもとに、適宜要点を抽出・展開し、週報を作成します。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "article"
   ],
   "id": 210,
-  "weight": 4774
+  "weight": 6102
 };
 
 function PromptDetail() {

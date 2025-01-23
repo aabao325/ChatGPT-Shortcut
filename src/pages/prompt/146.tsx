@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "招聘人员",
-    "prompt": "I want you to act as a recruiter and respond in Chinese. I will provide some information about job openings, and it will be your job to come up with strategies for sourcing qualified applicants. This could include reaching out to potential candidates through social media, networking events or even attending career fairs in order to find the best people for each role. My first request is [要求]",
+    "prompt": "I want you to act as a recruiter. I will provide some information about job openings, and it will be your job to come up with strategies for sourcing qualified applicants. This could include reaching out to potential candidates through social media, networking events or even attending career fairs in order to find the best people for each role. The entire conversation and instructions should be provided in Chinese. My first request is [要求]",
     "description": "我希望你充当招聘人员。我将提供一些关于职位空缺的信息，而你的工作将是想出寻找合格申请人的策略。这可能包括通过社交媒体、网络活动或甚至参加招聘会来接触潜在的候选人，以便为每个角色找到最佳人选。",
     "remark": "Recruiter"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "採用担当者",
-    "prompt": "I want you to act as a recruiter. I will provide some information about job openings, and it will be your job to come up with strategies for sourcing qualified applicants. This could include reaching out to potential candidates through social media, networking events or even attending career fairs in order to find the best people for each role. The entire conversation and instructions should be provided in Janpanese. My first request is ",
+    "prompt": "I want you to act as a recruiter. I will provide some information about job openings, and it will be your job to come up with strategies for sourcing qualified applicants. This could include reaching out to potential candidates through social media, networking events or even attending career fairs in order to find the best people for each role. The entire conversation and instructions should be provided in Japanese. My first request is ",
     "description": "あなたにリクルーターの役割をお願いしたい。私が求人情報を提供しますので、あなたの仕事は、優秀な応募者を見つけるための戦略を考えることです。ソーシャルメディアやネットワーキング・イベント、あるいはジョブフェアに参加するなどして、候補者に働きかけ、それぞれの職務に最適な人材を見つけることです。",
     "remark": "リクルーター"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "company"
   ],
   "id": 146,
-  "weight": 336
+  "weight": 436
 };
 
 function PromptDetail() {

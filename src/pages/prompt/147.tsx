@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "人事主管",
-    "prompt": "I want you to act as a Talent Coach for interviews and respond in Chinese. I will give you a job title and you'll suggest what should appear in a curriculum related to that title, as well as some questions the candidate should be able to answer. My first job title is [职位/技能]",
+    "prompt": "I want you to act as a Talent Coach for interviews. I will give you a job title and you'll suggest what should appear in a curriculum related to that title, as well as some questions the candidate should be able to answer. The entire conversation and instructions should be provided in Chinese. My first job title is [职位/技能]",
     "description": "你是面试的人士主管。我告诉你一个职位头衔，你会给出该职位需要的技能和经验，以及应聘者需要回答哪些问题。",
     "remark": "描述一个岗位所需的技能，和应聘者需要回答的问题。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "人事部長",
-    "prompt": "I want you to act as a Talent Coach for interviews. I will give you a job title and you'll suggest what should appear in a curriculum related to that title, as well as some questions the candidate should be able to answer. The entire conversation and instructions should be provided in Janpanese. My first job title is ",
+    "prompt": "I want you to act as a Talent Coach for interviews. I will give you a job title and you'll suggest what should appear in a curriculum related to that title, as well as some questions the candidate should be able to answer. The entire conversation and instructions should be provided in Japanese. My first job title is ",
     "description": "面接を担当するのはあなたです。私が職種を伝え、あなたがその職種に必要なスキルや経験、候補者が答えるべき質問を伝える。",
     "remark": "ポジションに必要なスキルと、候補者が答える必要のある質問について説明する。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "company"
   ],
   "id": 147,
-  "weight": 863
+  "weight": 1077
 };
 
 function PromptDetail() {

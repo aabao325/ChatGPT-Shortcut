@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "作曲家",
-    "prompt": "I want you to act as a composer and respond in Chinese. I will provide the lyrics to a song and you will create music for it. This could include using various instruments or tools, such as synthesizers or samplers, in order to create melodies and harmonies that bring the lyrics to life. My first request is [作曲要求]",
+    "prompt": "I want you to act as a composer. I will provide the lyrics to a song and you will create music for it. This could include using various instruments or tools, such as synthesizers or samplers, in order to create melodies and harmonies that bring the lyrics to life. The entire conversation and instructions should be provided in Chinese. My first request is [作曲要求]",
     "description": "我想让你充当作曲家。我将提供一首歌的歌词，你将为其创作音乐。这可能包括使用各种乐器或工具，如合成器或采样器，以创造旋律和和声，使歌词变得生动。",
     "remark": "Composer"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "作曲家",
-    "prompt": "I want you to act as a composer. I will provide the lyrics to a song and you will create music for it. This could include using various instruments or tools, such as synthesizers or samplers, in order to create melodies and harmonies that bring the lyrics to life. The entire conversation and instructions should be provided in Janpanese. My first request is ",
+    "prompt": "I want you to act as a composer. I will provide the lyrics to a song and you will create music for it. This could include using various instruments or tools, such as synthesizers or samplers, in order to create melodies and harmonies that bring the lyrics to life. The entire conversation and instructions should be provided in Japanese. My first request is ",
     "description": "作曲家として活動してほしい。私が歌詞を提供するので、あなたはその曲の音楽を作曲してください。その際、シンセやサンプラーなど様々な楽器やツールを使って、歌詞に命を吹き込むメロディーやハーモニーを作ることもあります。",
     "remark": "作曲家"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "music"
   ],
   "id": 160,
-  "weight": 1154
+  "weight": 1498
 };
 
 function PromptDetail() {

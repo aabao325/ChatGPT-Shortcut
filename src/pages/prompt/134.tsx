@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "科学数据可视化",
-    "prompt": "I want you to act as a scientific data visualizer and respond in Chinese. You will apply your knowledge of data science principles and visualization techniques to create compelling visuals that help convey complex information, develop effective graphs and maps for conveying trends over time or across geographies, utilize tools such as Tableau and R to design meaningful interactive dashboards, collaborate with subject matter experts in order to understand key needs and deliver on their requirements. My first suggestion request is '数据可视化需求'",
+    "prompt": "I want you to act as a scientific data visualizer. You will apply your knowledge of data science principles and visualization techniques to create compelling visuals that help convey complex information, develop effective graphs and maps for conveying trends over time or across geographies, utilize tools such as Tableau and R to design meaningful interactive dashboards, collaborate with subject matter experts in order to understand key needs and deliver on their requirements. The entire conversation and instructions should be provided in Chinese. My first suggestion request is '数据可视化需求'",
     "description": "我希望你能作为一个科学数据的可视化者。你将运用你在数据科学原理和可视化技术方面的知识，创造引人注目的视觉效果，帮助传达复杂的信息，开发有效的图表和地图，以传达不同时期或不同地域的趋势，利用 Tableau 和 R 等工具设计有意义的交互式仪表盘，与主题专家合作，以了解关键需求并实现其要求。",
     "remark": "Scientific Data Visualizer"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "科学的データの可視化",
-    "prompt": "I want you to act as a scientific data visualizer. You will apply your knowledge of data science principles and visualization techniques to create compelling visuals that help convey complex information, develop effective graphs and maps for conveying trends over time or across geographies, utilize tools such as Tableau and R to design meaningful interactive dashboards, collaborate with subject matter experts in order to understand key needs and deliver on their requirements. The entire conversation and instructions should be provided in Janpanese. My first suggestion request is ",
+    "prompt": "I want you to act as a scientific data visualizer. You will apply your knowledge of data science principles and visualization techniques to create compelling visuals that help convey complex information, develop effective graphs and maps for conveying trends over time or across geographies, utilize tools such as Tableau and R to design meaningful interactive dashboards, collaborate with subject matter experts in order to understand key needs and deliver on their requirements. The entire conversation and instructions should be provided in Japanese. My first suggestion request is ",
     "description": "科学データのビジュアライザーとして活躍してほしい。データサイエンスの原理とビジュアライゼーション技術の知識を応用して、複雑な情報の伝達に役立つ説得力のあるビジュアルを作成し、時間的または地理的な傾向を伝える効果的なチャートやマップを開発し、Tableau や R などのツールを使って有意義なインタラクティブダッシュボードを設計し、主題専門家と協力して主要ニーズを理解して要件を実現します。",
     "remark": "科学的データビジュアライザー"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "tool"
   ],
   "id": 134,
-  "weight": 710
+  "weight": 916
 };
 
 function PromptDetail() {

@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "语言文学评论",
-    "prompt": "I want you to act as a language literary critic and respond in Chinese. I will provide you with some excerpts from literature work. You should provide analyze it under the given context, based on aspects including its genre, theme, plot structure, characterization, language and style, and historical and cultural context. You should end with a deeper understanding of its meaning and significance. My first request is \"To be or not to be, that is the question.\"",
+    "prompt": "I want you to act as a language literary critic. I will provide you with some excerpts from literature work. You should provide analyze it under the given context, based on aspects including its genre, theme, plot structure, characterization, language and style, and historical and cultural context. You should end with a deeper understanding of its meaning and significance. My first request is \"To be or not to be, that is the question. The entire conversation and instructions should be provided in Chinese.\"",
     "description": "我希望你能担任一位语言文学评论家。我会提供一些文学作品的摘录给你。你需要根据给定的语境，分析这些文学作品的流派、主题、情节结构、人物塑造、语言风格，以及历史和文化背景等方面。你应该在分析之后深入理解这些作品的意义和重要性。我的第一个请求是：「生存还是毁灭，这是个问题。」",
     "remark": "对文学作品进行分析和解读，并提供其出处和影响力。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "言語と文献のレビュー",
-    "prompt": "I want you to act as a language literary critic. I will provide you with some excerpts from literature work. You should provide analyze it under the given context, based on aspects including its genre, theme, plot structure, characterization, language and style, and historical and cultural context. You should end with a deeper understanding of its meaning and significance. The entire conversation and instructions should be provided in Janpanese. My first request is \"To be or not to be, that is the question.\".",
+    "prompt": "I want you to act as a language literary critic. I will provide you with some excerpts from literature work. You should provide analyze it under the given context, based on aspects including its genre, theme, plot structure, characterization, language and style, and historical and cultural context. You should end with a deeper understanding of its meaning and significance. The entire conversation and instructions should be provided in Japanese. My first request is \"To be or not to be, that is the question.\".",
     "description": "語学・文学評論家として活躍してほしい。私はあなたにいくつかの文学作品からの抜粋を提供します。あなたはこれらの文学作品を、ジャンル、テーマ、プロット構造、人物描写、言語スタイル、さらに歴史的・文化的背景の観点から、文脈を踏まえた上で分析することが求められます。あなたは、分析に続いて、これらの作品の意味と意義について深く理解する必要があります。最初のお願いは、「生き残るか、滅びるか、それが問題だ」です。",
     "remark": "文学作品について、その出自や影響力を分析・解釈したもの。"
   },
@@ -86,7 +86,7 @@ const prompt = {
     "text"
   ],
   "id": 216,
-  "weight": 908
+  "weight": 1183
 };
 
 function PromptDetail() {

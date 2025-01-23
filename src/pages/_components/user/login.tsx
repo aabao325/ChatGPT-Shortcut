@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Button, Card, Form, Input, message, Tabs, Checkbox, Space } from "antd";
+import React, { useState, useEffect, useCallback } from "react";
+import { Button, Card, Form, Input, message, Tabs, Checkbox, Space, Tooltip } from "antd";
 import { GoogleOutlined } from "@ant-design/icons";
 import Translate, { translate } from "@docusaurus/Translate";
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-import { login, register, forgotPassword } from "@site/src/api";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import { login, register, forgotPassword, sendPasswordlessLink } from "@site/src/api";
 import { getGoogleAuthUrl, authenticateUserWithGoogle } from "@site/src/googleAuthApi";
 
 const rules = {
@@ -35,6 +35,15 @@ const rules = {
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);
+  const [activeTab, setActiveTab] = useState("1");
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const handleRegister = useCallback(() => {
+    setActiveTab("3");
+  }, []);
+  const handleForgotPasswordClick = useCallback(() => {
+    setActiveTab("4");
+  }, []);
 
   // Google Auth
   useEffect(() => {
@@ -47,7 +56,10 @@ const LoginPage = () => {
             const auth_respond = await authenticateUserWithGoogle(event.data.code);
             handleSuccess(auth_respond.user.username, auth_respond.token);
           } catch (error) {
-            message.error("Login failed: " + error.message);
+            messageApi.open({
+              type: "error",
+              content: "Login failed: " + error.message,
+            });
           } finally {
             setLoading(false);
           }
@@ -70,7 +82,10 @@ const LoginPage = () => {
         alert("Failed to generate Google Auth URL.");
       }
     } catch (error) {
-      message.error("Error while attempting Google login: " + error.message);
+      messageApi.open({
+        type: "error",
+        content: "Error while attempting Google login: " + error.message,
+      });
     } finally {
       setLoading(false);
     }
@@ -89,43 +104,61 @@ const LoginPage = () => {
   const handleErrors = (err) => {
     try {
       if (err.message === "Request timed out. Please try again.") {
-        message.error(err.message);
+        messageApi.open({
+          type: "error",
+          content: err.message,
+        });
       } else if (err.response.status === 400) {
-        message.error(err.response.data.error.message);
+        messageApi.open({
+          type: "error",
+          content: err.response.data.error.message,
+        });
       } else {
-        message.error(translate({ id: "message.error", message: "发生错误，请稍后再试" }));
+        messageApi.open({
+          type: "error",
+          content: <Translate id="message.error">发生错误，请稍后再试</Translate>,
+        });
       }
     } catch (err) {
-      message.error(translate({ id: "message.error", message: "处理错误时发生错误" }));
+      messageApi.open({
+        type: "error",
+        content: <Translate id="message.error">处理错误时发生错误</Translate>,
+      });
     }
   };
 
-  const handleAuth = async (values, authFunction, successMessage) => {
+  const handleAuth = useCallback(async (values, authFunction, successMessage) => {
     setLoading(true);
     try {
       const response = await authFunction(values);
       handleSuccess(response.data.user.username, response.data.jwt);
-      message.success(successMessage);
+      messageApi.open({
+        type: "success",
+        content: successMessage,
+      });
     } catch (err) {
       handleErrors(err);
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
   const onFinishLogin = async (values) => {
-    handleAuth(values, login, <Translate id='message.loginSuccess'>登录成功！</Translate>);
+    handleAuth(values, login, <Translate id="message.loginSuccess">登录成功！</Translate>);
   };
 
   const onFinishRegister = async (values) => {
-    handleAuth(values, register, <Translate id='message.registerSuccess'>注册成功！</Translate>);
+    handleAuth(values, register, <Translate id="message.registerSuccess">注册成功！</Translate>);
   };
 
   const handleForgotPassword = async (values) => {
     setLoading(true);
     try {
       await forgotPassword(values.email);
-      message.success(<Translate id='message.forgotPassword.success'>密码重置邮件已发送！</Translate>);
+      messageApi.open({
+        type: "success",
+        content: <Translate id="message.forgotPassword.success">密码重置邮件已发送！</Translate>,
+      });
     } catch (error) {
       console.error(
         translate({
@@ -134,49 +167,91 @@ const LoginPage = () => {
         }),
         error
       );
-      message.error(<Translate id='message.forgotPassword.error'>发送密码重置邮件失败，请稍后重试</Translate>);
+      messageApi.open({
+        type: "error",
+        content: <Translate id="message.forgotPassword.error">发送密码重置邮件失败，请稍后重试</Translate>,
+      });
     } finally {
       setLoading(false);
     }
   };
 
-  // Add a new state value to track the active tab
-  const [activeTab, setActiveTab] = useState("1");
-  const handleForgotPasswordClick = () => {
-    setActiveTab("3");
+  // 集成免密码登录
+  const handleSendPasswordlessLink = async (values) => {
+    setLoading(true);
+    const target = values.email;
+
+    // 判断输入是否为邮箱格式
+    const isValidEmail = (email) => {
+      return email.includes("@");
+    };
+
+    try {
+      // 根据输入的值动态地决定传递给后端的参数
+      const payload = isValidEmail(target) ? { email: target } : { username: target };
+      await sendPasswordlessLink(payload);
+      messageApi.open({
+        type: "success",
+        content: <Translate id="message.passwordlessLinkSent">免密码登录链接已发送到您的邮箱！</Translate>,
+      });
+    } catch (error) {
+      console.error("Error sending passwordless login link:", error);
+      messageApi.open({
+        type: "error",
+        content: <Translate id="message.errorSendingPasswordlessLink">发送失败，请检查邮箱或用户名</Translate>,
+      });
+    } finally {
+      setLoading(false);
+    }
   };
-  const loginForm = (
-    <Form onFinish={onFinishLogin}>
-      <Form.Item name='username' rules={rules.username}>
-        <Input
-          placeholder={translate({
-            id: "input.username",
-            message: "用户名/邮箱",
-          })}
-        />
-      </Form.Item>
-      <Form.Item name='password' rules={rules.password}>
-        <Input.Password placeholder={translate({ id: "input.password", message: "密码" })} />
+
+  const passwordlessLoginForm = (
+    <Form onFinish={handleSendPasswordlessLink}>
+      <Form.Item name="email" rules={rules.email}>
+        <Input placeholder={translate({ id: "input.username", message: "用户名/邮箱" })} />
       </Form.Item>
       <Form.Item>
-        <Space size='middle'>
-          <Button htmlType='submit' loading={loading}>
-            <Translate id='button.login'>登录</Translate>
-          </Button>
-          <Button type='primary' onClick={handleGoogleLogin} icon={<GoogleOutlined />}>
+        <Button type="primary" htmlType="submit" loading={loading}>
+          <Translate id="button.sendPasswordlessLink">获取免密码登录链接</Translate>
+        </Button>
+      </Form.Item>
+    </Form>
+  );
+
+  const loginForm = (
+    <Form onFinish={onFinishLogin}>
+      <Form.Item name="username" rules={rules.username}>
+        <Input placeholder={translate({ id: "input.username", message: "用户名/邮箱" })} />
+      </Form.Item>
+      <Form.Item name="password" rules={rules.password}>
+        <Input.Password placeholder={translate({ id: "input.password", message: "密码" })} />
+      </Form.Item>
+      <Space size="middle" wrap>
+        <Button htmlType="submit" loading={loading}>
+          <Translate id="button.login">登录</Translate>
+        </Button>
+        <Tooltip
+          title={translate({
+            id: "googleauth.tooltip",
+            message: "ChatGPT 的内嵌页面不支持 Google 授权登录，请使用账户密码。其他页面不受此限制。",
+          })}>
+          <Button type="primary" onClick={handleGoogleLogin} icon={<GoogleOutlined />}>
             Login via Google
           </Button>
-          <Button onClick={handleForgotPasswordClick}>
-            <Translate id='button.forgotPassword'>忘记密码</Translate>
-          </Button>
-        </Space>
-      </Form.Item>
+        </Tooltip>
+        <Button onClick={handleRegister}>
+          <Translate id="button.register">注册</Translate>
+        </Button>
+        <Button onClick={handleForgotPasswordClick}>
+          <Translate id="button.forgotPassword">忘记密码</Translate>
+        </Button>
+      </Space>
     </Form>
   );
 
   const registerForm = (
     <Form onFinish={onFinishRegister}>
-      <Form.Item name='username' rules={rules.username}>
+      <Form.Item name="username" rules={rules.username}>
         <Input
           placeholder={translate({
             id: "input.register.username",
@@ -184,15 +259,16 @@ const LoginPage = () => {
           })}
         />
       </Form.Item>
-      <Form.Item name='email' rules={rules.email}>
+      <Form.Item name="email" rules={rules.email}>
         <Input placeholder={translate({ id: "input.email", message: "邮箱" })} />
       </Form.Item>
-      <Form.Item name='password' rules={rules.password}>
+      <Form.Item name="password" rules={rules.password} style={{ marginBottom: "1px" }}>
         <Input.Password placeholder={translate({ id: "input.password", message: "密码" })} />
       </Form.Item>
       <Form.Item
-        name='agreement'
-        valuePropName='checked'
+        name="agreement"
+        valuePropName="checked"
+        style={{ marginBottom: "1px" }}
         rules={[
           {
             validator: (_, value) =>
@@ -209,26 +285,21 @@ const LoginPage = () => {
           },
         ]}>
         <Checkbox>
-          <Translate id='agreement.text'>点此同意</Translate>
-          <a href='/docs/terms-of-service'>
-            <Translate id='agreement.terms'>服务条款</Translate>
+          <Translate id="agreement.text">点此同意</Translate>
+          <a href="/docs/terms-of-service">
+            <Translate id="agreement.terms">服务条款</Translate>
           </a>
-          <Translate id='agreement.and'>和</Translate>
-          <a href='/docs/privacy-policy'>
-            <Translate id='agreement.policy'>隐私政策</Translate>
+          <Translate id="agreement.and">和</Translate>
+          <a href="/docs/privacy-policy">
+            <Translate id="agreement.policy">隐私政策</Translate>
           </a>
           。
         </Checkbox>
       </Form.Item>
       <Form.Item>
-        <Space size='middle'>
-          <Button htmlType='submit' loading={loading}>
-            <Translate id='button.register'>注册</Translate>
-          </Button>
-          <Button type='primary' onClick={handleGoogleLogin} icon={<GoogleOutlined />}>
-            Login via Google
-          </Button>
-        </Space>
+        <Button type="primary" htmlType="submit" loading={loading}>
+          <Translate id="button.register">注册</Translate>
+        </Button>
       </Form.Item>
     </Form>
   );
@@ -236,7 +307,7 @@ const LoginPage = () => {
   const forgotForm = (
     <Form onFinish={handleForgotPassword}>
       <Form.Item
-        name='email'
+        name="email"
         rules={[
           {
             required: true,
@@ -249,34 +320,43 @@ const LoginPage = () => {
         <Input placeholder={translate({ id: "placeholder.email", message: "邮箱" })} />
       </Form.Item>
       <Form.Item>
-        <Button htmlType='submit' loading={loading}>
-          <Translate id='button.sendResetEmail'>发送重置邮件</Translate>
+        <Button type="primary" htmlType="submit" loading={loading}>
+          <Translate id="button.sendResetEmail">发送密码重置邮件</Translate>
         </Button>
       </Form.Item>
     </Form>
   );
+
   const items = [
     {
       key: "1",
-      label: <Translate id='tabs.login'>登录</Translate>,
+      label: <Translate id="tabs.login">登录</Translate>,
       children: loginForm,
     },
     {
       key: "2",
-      label: <Translate id='tabs.register'>注册</Translate>,
-      children: registerForm,
+      label: <Translate id="tabs.passwordlessLogin">免密码登录</Translate>,
+      children: passwordlessLoginForm,
     },
     {
       key: "3",
-      label: <Translate id='tabs.forgotPassword'>忘记密码</Translate>,
+      label: <Translate id="button.register">注册</Translate>,
+      children: registerForm,
+    },
+    {
+      key: "4",
+      label: <Translate id="label.forgotPassword">忘记密码</Translate>,
       children: forgotForm,
     },
   ];
 
   return (
-    <Card title={<Translate id='card.welcome'>欢迎</Translate>} bordered={false}>
-      <Tabs defaultActiveKey='1' activeKey={activeTab} onChange={setActiveTab} items={items} />
-    </Card>
+    <>
+      {contextHolder}
+      <Card title={<Translate id="card.welcome">欢迎</Translate>} bordered={false}>
+        <Tabs defaultActiveKey="1" activeKey={activeTab} onChange={setActiveTab} items={items} />
+      </Card>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "化学反应容器",
-    "prompt": "I want you to act as a chemical reaction vessel and respond in Chinese. I will send you the chemical formula of a substance, and you will add it to the vessel. If the vessel is empty, the substance will be added without any reaction. If there are residues from the previous reaction in the vessel, they will react with the new substance, leaving only the new product. Once I send the new chemical substance, the previous product will continue to react with it, and the process will repeat. Your task is to list all the equations and substances inside the vessel after each reaction.",
+    "prompt": "I want you to act as a chemical reaction vessel. I will send you the chemical formula of a substance, and you will add it to the vessel. If the vessel is empty, the substance will be added without any reaction. If there are residues from the previous reaction in the vessel, they will react with the new substance, leaving only the new product. Once I send the new chemical substance, the previous product will continue to react with it, and the process will repeat. Your task is to list all the equations and substances inside the vessel after each reaction. The entire conversation and instructions should be provided in Chinese.",
     "description": "我要你扮演一个化学反应容器。我会把一种物质的化学式寄给你，你把它加到容器里。如果容器是空的，添加物质不会有任何反应。如果容器中有以前反应的残留物，它们将与新物质发生反应，只留下新产品。一旦我发送新的化学物质，以前的产品将继续与它反应，过程将重复。你的任务是在每次反应后列出容器内的所有方程式和物质。",
     "remark": "chemical reaction vessel"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "化学反応容器",
-    "prompt": "I want you to act as a chemical reaction vessel. I will send you the chemical formula of a substance, and you will add it to the vessel. If the vessel is empty, the substance will be added without any reaction. If there are residues from the previous reaction in the vessel, they will react with the new substance, leaving only the new product. Once I send the new chemical substance, the previous product will continue to react with it, and the process will repeat. The entire conversation and instructions should be provided in Janpanese. Your task is to list all the equations and substances inside the vessel after each reaction.",
+    "prompt": "I want you to act as a chemical reaction vessel. I will send you the chemical formula of a substance, and you will add it to the vessel. If the vessel is empty, the substance will be added without any reaction. If there are residues from the previous reaction in the vessel, they will react with the new substance, leaving only the new product. Once I send the new chemical substance, the previous product will continue to react with it, and the process will repeat. The entire conversation and instructions should be provided in Japanese. Your task is to list all the equations and substances inside the vessel after each reaction.",
     "description": "化学反応容器を演じてほしい。ある物質の化学式を送りますので、それを容器に入れてください。容器が空であれば、物質を加えても何の反応もありません。もし容器の中に以前の反応の残りがあれば、それらは新しい物質と反応し、新しい生成物だけが残ります。新しい化学物質を送ると、前の物質と反応し続け、プロセスが繰り返されます。あなたの仕事は、各反応の後に容器内のすべての式と物質をリストアップすることです。",
     "remark": "かがくはんのうようき"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "tool"
   ],
   "id": 136,
-  "weight": 211
+  "weight": 283
 };
 
 function PromptDetail() {

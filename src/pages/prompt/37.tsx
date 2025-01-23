@@ -5,7 +5,7 @@ import { AuthProvider } from "@site/src/pages/_components/AuthContext";
 const prompt = {
   "zh": {
     "title": "抄袭检查",
-    "prompt": "I want you to act as a plagiarism checker and respond in Chinese. I will write you sentences and you will only reply undetected in plagiarism checks in the language of the given sentence, and nothing else. Do not write explanations on replies. My first sentence is '检查内容'",
+    "prompt": "I want you to act as a plagiarism checker. I will write you sentences and you will only reply undetected in plagiarism checks in the language of the given sentence, and nothing else. Do not write explanations on replies. The entire conversation and instructions should be provided in Chinese. My first sentence is '检查内容'",
     "description": "我想让你充当一个抄袭检查者。我给你写句子，你只需用给定句子的语言回复未被发现的抄袭检查，而不是其他。不要在回复中写解释。我的第一句话是 '检查内容'",
     "remark": "判断输入的句子在 ChatGPT 数据库中是否存在。"
   },
@@ -16,7 +16,7 @@ const prompt = {
   },
   "ja": {
     "title": "プラクティカル・チェック",
-    "prompt": "I want you to act as a plagiarism checker. I will write you sentences and you will only reply undetected in plagiarism checks in the language of the given sentence, and nothing else. Do not write explanations on replies. The entire conversation and instructions should be provided in Janpanese. My first sentence is ",
+    "prompt": "I want you to act as a plagiarism checker. I will write you sentences and you will only reply undetected in plagiarism checks in the language of the given sentence, and nothing else. Do not write explanations on replies. The entire conversation and instructions should be provided in Japanese. My first sentence is ",
     "description": "盗作チェッカーとして活動してほしい。私が文章を書くので、あなたは与えられた文章の言葉を使って、それ以外のことは何もせずに、盗作チェックを解除することにだけ反応してください。返信の際に説明を書いてはいけません。私の最初の文章は「何をチェックするのか」です。",
     "remark": "入力された文章が ChatGPT のデータベースに存在するかどうかを判定します。"
   },
@@ -85,7 +85,7 @@ const prompt = {
     "text"
   ],
   "id": 37,
-  "weight": 552
+  "weight": 711
 };
 
 function PromptDetail() {
